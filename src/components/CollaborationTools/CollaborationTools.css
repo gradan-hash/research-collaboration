@@ -1,0 +1,109 @@
+/* General Styling */
+.collaboration-tools {
+  padding: 60px;
+ 
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collaboration-tools h2,
+.collaboration-tools h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Chat Interface */
+.chat-interface {
+  margin-bottom: 30px;
+  margin-top: 5%;
+}
+
+.chat-box {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+form input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* File Sharing System */
+.file-sharing ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.file-sharing li {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.file-sharing input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Discussion Forum */
+.discussion-forum ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.discussion-forum li {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.discussion-forum li strong {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .collaboration-tools {
+    margin-top: 10%;
+    padding: 15px;
+  }
+
+  form input {
+    width: 70%;
+  }
+
+  .chat-box {
+    height: 150px;
+  }
+}
