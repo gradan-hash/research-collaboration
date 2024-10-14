@@ -1,0 +1,95 @@
+/* General Styling */
+.funding-grants {
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.funding-grants h2,
+.funding-grants h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Grant Opportunities Table */
+.grant-opportunities table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.grant-opportunities th,
+.grant-opportunities td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.grant-opportunities th {
+  background-color: #007bff;
+  color: white;
+}
+
+.grant-opportunities td {
+  background-color: #f9f9f9;
+}
+
+/* Application Resources */
+.application-resources ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.application-resources li {
+  margin-bottom: 10px;
+}
+
+.application-resources a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.application-resources a:hover {
+  text-decoration: underline;
+}
+
+/* Status Tracking System Table */
+.status-tracking table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.status-tracking th,
+.status-tracking td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.status-tracking th {
+  background-color: #007bff;
+  color: white;
+}
+
+.status-tracking td {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .funding-grants {
+    padding: 15px;
+    margin-top: 10%;
+  }
+
+  .grant-opportunities th,
+  .grant-opportunities td,
+  .status-tracking th,
+  .status-tracking td {
+    font-size: 14px;
+  }
+}
