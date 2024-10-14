@@ -28,6 +28,7 @@ const Navbar = () => {
           <Link to="/resources">Resources</Link>
           <Link to="/events">Events</Link>
           <Link to="/profile">Profile</Link>
+          <Link to="/support">Support</Link>
         </div>
 
         {/* Search Bar */}

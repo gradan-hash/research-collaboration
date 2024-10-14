@@ -6,6 +6,8 @@ import UserProfile from "./components/User Profile/UserProfile";
 import ProjectProposals from "./components/ProjectProposals/ProjectProposals";
 import CollaborationTools from "./components/CollaborationTools/CollaborationTools";
 import FundingAndGrants from "./components/FundingAndGrants/FundingAndGrants";
+import EventsCalendar from "./components/EventsCalendar/EventsCalendar";
+import HelpAndSupport from "./components/HelpAndSupport/HelpAndSupport";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/proposals" element={<ProjectProposals />} />
         <Route path="/resources" element={<CollaborationTools />} />
         <Route path="/projects" element={<FundingAndGrants />} />
+        <Route path="/events" element={<EventsCalendar />} />
+        <Route path="/support" element={<HelpAndSupport />} />
       </Routes>
 
       <Footer />

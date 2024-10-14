@@ -1,0 +1,149 @@
+/* General Styling */
+.events-calendar {
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.events-calendar h2,
+.events-calendar h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Event Listings */
+.event-listings ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.event-listings li {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.event-listings li strong {
+  font-size: 18px;
+}
+
+.event-listings button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-listings button:hover {
+  background-color: #0056b3;
+}
+
+/* Registration Form */
+.registration-form {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.registration-form input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.registration-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #218838;
+}
+
+/* Success Message */
+.success-message {
+  margin-top: 20px;
+  background-color: #d4edda;
+  padding: 15px;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  border-radius: 4px;
+}
+
+/* Registered Events */
+.registered-events ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.registered-events li {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Event Submission Form */
+.event-submission form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.event-submission label {
+  font-size: 16px;
+}
+
+.event-submission input,
+.event-submission textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.event-submission button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-submission button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .events-calendar {
+    padding: 15px;
+    margin-top: 10%;
+  }
+
+  .event-listings li {
+    font-size: 14px;
+  }
+
+  .event-submission form {
+    gap: 10px;
+  }
+}
