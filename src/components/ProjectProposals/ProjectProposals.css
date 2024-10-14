@@ -1,0 +1,100 @@
+/* General Styling for the Project Proposals */
+.project-proposals {
+ 
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-proposals h2,
+.project-proposals h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Submission Form */
+.submission-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.submission-form label {
+  font-size: 16px;
+}
+
+.submission-form input,
+.submission-form textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.submission-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submission-form button:hover {
+  background-color: #218838;
+}
+
+/* Proposal Status Tracker */
+.proposal-status table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.proposal-status th,
+.proposal-status td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.proposal-status th {
+  background-color: #007bff;
+  color: white;
+}
+
+.proposal-status td {
+  background-color: #f9f9f9;
+}
+
+.proposal-status td:nth-child(2) {
+  text-transform: capitalize;
+}
+
+/* Review and Feedback Section */
+.proposal-feedback p {
+  margin-top: 20px;
+
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-proposals {
+    margin-top: 10%;
+    padding: 15px;
+  }
+
+  .submission-form form {
+    gap: 10px;
+  }
+
+  .proposal-status table,
+  .proposal-status th,
+  .proposal-status td {
+    font-size: 14px;
+  }
+}

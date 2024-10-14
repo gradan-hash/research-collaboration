@@ -1,0 +1,80 @@
+/* General Styling for the User Profile */
+.user-profile {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.personal-info {
+  margin-top: 5%;
+}
+
+/* Personal Information Section */
+.personal-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Research Interests Section */
+.research-interests ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.research-interests ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Information Section */
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Connections and Networking Section */
+.connections ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.connections ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.connections ul li strong {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-profile {
+    padding: 15px;
+    margin-top: 10%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p,
+  li {
+    font-size: 14px;
+  }
+}
