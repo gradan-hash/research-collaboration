@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "./HelpAndSupport.css";
 
 const HelpAndSupport = () => {
@@ -18,11 +18,26 @@ const HelpAndSupport = () => {
     },
   ]);
 
-  // User Guide data (simulated)
+  // User Guide data with descriptions (simulated)
   const userGuides = [
-    { title: "How to Create a New Project", link: "/guides/create-project" },
-    { title: "Navigating the Dashboard", link: "/guides/navigate-dashboard" },
-    { title: "Submitting a Proposal", link: "/guides/submit-proposal" },
+    {
+      title: "How to Create a New Project",
+      description:
+        "Learn how to create and manage new projects using the project creation tool. Step-by-step instructions included.",
+      link: "/guides/create-project",
+    },
+    {
+      title: "Navigating the Dashboard",
+      description:
+        "A guide on navigating the dashboard to manage your proposals, projects, and notifications effectively.",
+      link: "/",
+    },
+    {
+      title: "Submitting a Proposal",
+      description:
+        "This guide walks you through the process of submitting a proposal, from filling out the form to uploading documents.",
+      link: "/proposals",
+    },
   ];
 
   // Handle FAQ toggle
@@ -82,8 +97,11 @@ const HelpAndSupport = () => {
         <h3>User Guides</h3>
         <ul>
           {userGuides.map((guide, index) => (
-            <li key={index}>
-              <a href={guide.link}>{guide.title}</a>
+            <li key={index} className="guide-item">
+              <h4>
+                <a href={guide.link}>{guide.title}</a>
+              </h4>
+              <p>{guide.description}</p>
             </li>
           ))}
         </ul>

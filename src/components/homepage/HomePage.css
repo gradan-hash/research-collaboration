@@ -127,7 +127,9 @@
 .modal-content button:hover {
   background-color: #0056b3;
 }
-
+.link1 {
+  text-decoration: none;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .home-page {

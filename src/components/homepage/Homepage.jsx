@@ -1,42 +1,49 @@
 import { useState } from "react";
 import "./HomePage.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   // Simulated project data
   const projects = [
     {
-      title: "Project Title 1",
-      description: "Brief description of Project 1...",
-      details: "Detailed information about Project 1.",
+      title: "AI-based Healthcare System",
+      description: "An innovative AI-driven system for healthcare...",
+      details:
+        "This project focuses on using AI to improve healthcare services by predicting patient outcomes and personalizing treatment. Completion date: December 2024. Category: Healthcare Technology.",
     },
     {
-      title: "Project Title 2",
-      description: "Brief description of Project 2...",
-      details: "Detailed information about Project 2.",
+      title: "Blockchain for Supply Chain",
+      description: "A blockchain-based solution for tracking goods...",
+      details:
+        "This project aims to enhance transparency in the supply chain using blockchain technology. The goal is to reduce fraud and improve logistics efficiency. Completion date: June 2024. Category: Fintech.",
     },
     {
-      title: "Project Title 3",
-      description: "Brief description of Project 3...",
-      details: "Detailed information about Project 3.",
+      title: "Smart City IoT Network",
+      description: "Developing an IoT-based infrastructure for smart cities...",
+      details:
+        "This project focuses on creating a smart city infrastructure where devices communicate seamlessly. It involves using sensors and data analytics to optimize city services. Completion date: March 2025. Category: IoT, Smart Cities.",
     },
   ];
 
   // Simulated news data
   const newsItems = [
     {
-      title: "News Title 1",
-      description: "Brief description of News 1...",
-      details: "Detailed information about News 1.",
+      title: "AI Breakthrough in Healthcare",
+      description: "Researchers develop AI that predicts diseases...",
+      details:
+        "In a recent development, researchers have created an AI system that can predict the onset of diseases with 95% accuracy. Published on: October 14, 2024. Author: Dr. Jane Doe.",
     },
     {
-      title: "News Title 2",
-      description: "Brief description of News 2...",
-      details: "Detailed information about News 2.",
+      title: "Blockchain Adoption in Finance",
+      description: "Major banks adopting blockchain for secure transactions...",
+      details:
+        "Financial institutions worldwide are adopting blockchain technology to ensure faster and more secure transactions. Published on: September 22, 2024. Author: John Smith.",
     },
     {
-      title: "News Title 3",
-      description: "Brief description of News 3...",
-      details: "Detailed information about News 3.",
+      title: "Smart Cities: The Future of Urban Living",
+      description: "How IoT is revolutionizing city management...",
+      details:
+        "Cities around the world are becoming smarter with IoT technologies that improve traffic management, energy consumption, and safety. Published on: August 18, 2024. Author: Sarah Johnson.",
     },
   ];
 
@@ -91,9 +98,21 @@ const HomePage = () => {
       <section className="quick-links">
         <h2>Quick Links</h2>
         <div className="links-grid">
-          <button>Proposals</button>
-          <button>Events</button>
-          <button>Resources</button>
+          <button>
+            <Link to="/proposals" className="link1">
+              Proposals
+            </Link>
+          </button>
+          <button>
+            <Link to="/events" className="link1">
+              Events
+            </Link>
+          </button>
+          <button>
+            <Link to="/resources" className="link1">
+              Resources
+            </Link>
+          </button>
         </div>
       </section>
 
