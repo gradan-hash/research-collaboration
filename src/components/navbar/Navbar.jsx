@@ -1,14 +1,20 @@
-import  { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../../assets/logo.png"; // Make sure this path is correct
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  // Automatically close the menu when the route changes
+  useEffect(() => {
+    setIsOpen(false); // Close the navbar on route change
+  }, [location]);
 
   return (
     <nav className="navbar">
@@ -20,7 +26,14 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Navigation Links */}
+        {/* Hamburger Menu for Mobile */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+
+        {/* Navigation Links (Hidden on Mobile by default) */}
         <div className={`nav-links ${isOpen ? "open" : ""}`}>
           <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>
@@ -29,18 +42,7 @@ const Navbar = () => {
           <Link to="/events">Events</Link>
           <Link to="/profile">Profile</Link>
           <Link to="/support">Support</Link>
-        </div>
-
-        {/* Search Bar */}
-        <div className="search-bar">
-          <input type="text" placeholder="Search..." />
-        </div>
-
-        {/* Hamburger Menu */}
-        <div className="hamburger" onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <Link to="/search">Search</Link>
         </div>
       </div>
     </nav>

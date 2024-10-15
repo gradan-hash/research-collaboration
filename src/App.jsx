@@ -8,6 +8,7 @@ import CollaborationTools from "./components/CollaborationTools/CollaborationToo
 import FundingAndGrants from "./components/FundingAndGrants/FundingAndGrants";
 import EventsCalendar from "./components/EventsCalendar/EventsCalendar";
 import HelpAndSupport from "./components/HelpAndSupport/HelpAndSupport";
+import Search from "./components/Search/Search";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/projects" element={<FundingAndGrants />} />
         <Route path="/events" element={<EventsCalendar />} />
         <Route path="/support" element={<HelpAndSupport />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
 
       <Footer />

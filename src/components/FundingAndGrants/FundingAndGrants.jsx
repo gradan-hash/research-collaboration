@@ -2,41 +2,41 @@ import { useState } from "react";
 import "./FundingAndGrants.css";
 
 const FundingAndGrants = () => {
-  // Simulated grant opportunities
+  // Simulated grant opportunities with dates in US format
   const [grants] = useState([
     {
       title: "AI Research Grant",
       fundingType: "Government",
-      deadline: "2024-11-15",
+      deadline: "11/15/2024", // MM/DD/YYYY format
     },
     {
       title: "Blockchain Innovation Grant",
       fundingType: "Private",
-      deadline: "2024-12-01",
+      deadline: "12/01/2024", // MM/DD/YYYY format
     },
     {
       title: "Sustainable Energy Grant",
       fundingType: "Non-Profit",
-      deadline: "2024-10-30",
+      deadline: "10/30/2024", // MM/DD/YYYY format
     },
   ]);
 
-  // Simulated submitted applications for tracking
+  // Simulated submitted applications for tracking with dates in US format
   const [applications] = useState([
     {
       title: "AI in Healthcare",
       status: "Under Review",
-      submissionDate: "2024-09-20",
+      submissionDate: "09/20/2024", // MM/DD/YYYY format
     },
     {
       title: "Blockchain for Supply Chain",
       status: "Approved",
-      submissionDate: "2024-08-15",
+      submissionDate: "08/15/2024", // MM/DD/YYYY format
     },
     {
       title: "Smart Cities IoT Project",
       status: "Rejected",
-      submissionDate: "2024-07-05",
+      submissionDate: "07/05/2024", // MM/DD/YYYY format
     },
   ]);
 
@@ -67,15 +67,25 @@ const FundingAndGrants = () => {
         </table>
       </section>
 
-      {/* Application Resources */}
+      {/* Application Resources with external links */}
       <section className="application-resources">
         <h3>Application Resources</h3>
         <ul>
           <li>
-            <a href="/guidelines">Grant Application Guidelines</a>
+            <a
+              href="https://www.grants.gov/applicants/grant-applications/how-to-apply-for-grants"
+              target="_blank"
+              rel="noopener noreferrer">
+              Grant Application Guidelines
+            </a>
           </li>
           <li>
-            <a href="/tips">Tips for Writing Grant Proposals</a>
+            <a
+              href="https://www.hhs.gov/grants-contracts/grants/get-ready-for-grants-management/tips-for-preparing-grant-proposals/index.html"
+              target="_blank"
+              rel="noopener noreferrer">
+              Tips for Writing Grant Proposals
+            </a>
           </li>
         </ul>
       </section>

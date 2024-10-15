@@ -24,7 +24,7 @@ const HelpAndSupport = () => {
       title: "How to Create a New Project",
       description:
         "Learn how to create and manage new projects using the project creation tool. Step-by-step instructions included.",
-      link: "/guides/create-project",
+      link: "/projects",
     },
     {
       title: "Navigating the Dashboard",

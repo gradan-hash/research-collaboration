@@ -13,9 +13,9 @@ const Footer = () => {
 
         {/* Footer Links */}
         <div className="footer-links">
-          <a href="/terms">Terms of Service</a>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/contact">Contact</a>
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
+          <a href="/profile">Contact</a>
         </div>
 
         {/* Social Media Icons */}

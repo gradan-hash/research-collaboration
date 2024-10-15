@@ -2,18 +2,18 @@ import { useState } from "react";
 import "./EventsCalendar.css";
 
 const EventsCalendar = () => {
-  // Simulated event data
-  const [events] = useState([
+  // Simulated event data with US date format
+  const [events, setEvents] = useState([
     {
       name: "AI Conference 2024",
-      date: "2024-11-20",
+      date: "11/20/2024", // US format MM/DD/YYYY
       location: "New York, NY",
       description:
         "A conference on the latest advancements in Artificial Intelligence.",
     },
     {
       name: "Blockchain Summit",
-      date: "2024-12-05",
+      date: "12/05/2024", // US format MM/DD/YYYY
       location: "San Francisco, CA",
       description:
         "An event focused on blockchain technology in the finance industry.",
@@ -31,7 +31,6 @@ const EventsCalendar = () => {
   const [isRegistering, setIsRegistering] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [email, setEmail] = useState("");
-  const [registrationMessage, setRegistrationMessage] = useState("");
 
   // Handling form inputs for event submission
   const handleInputChange = (e) => {
@@ -51,8 +50,10 @@ const EventsCalendar = () => {
     setRegisteredEvents([...registeredEvents, selectedEvent]);
     setIsRegistering(false);
     setEmail("");
-    setRegistrationMessage(
-      "You have successfully registered. An email has been sent."
+
+    // Show alert after registration
+    alert(
+      `You have successfully registered for the event: ${selectedEvent.name}. A confirmation email has been sent.`
     );
   };
 
@@ -99,11 +100,6 @@ const EventsCalendar = () => {
             <button type="submit">Submit</button>
           </form>
         </section>
-      )}
-
-      {/* Registration Message */}
-      {registrationMessage && (
-        <p className="success-message">{registrationMessage}</p>
       )}
 
       {/* Registered Events */}
