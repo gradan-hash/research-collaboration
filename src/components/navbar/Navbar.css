@@ -65,9 +65,9 @@
     display: none;
     position: fixed;
     top: 50px;
-    left: 0;
+    right: 0;
     height: auto;
-    width: 60%;
+    width: 30%;
     background-color: #007bff;
     flex-direction: column;
     padding: 20px 0;
