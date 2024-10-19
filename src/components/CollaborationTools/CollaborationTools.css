@@ -1,7 +1,7 @@
 /* General Styling */
 .collaboration-tools {
   padding: 60px;
- 
+
   max-width: 1200px;
   margin: 0 auto;
   background-color: #f9f9f9;
@@ -106,4 +106,62 @@ form button:hover {
   .chat-box {
     height: 150px;
   }
+}
+/* Add styles for post details */
+.post-details {
+  background-color: #eef;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border-left: 4px solid #007bff;
+}
+
+/* Hover effect for clickable posts */
+.post-summary {
+  cursor: pointer;
+}
+
+.post-summary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Comments styling */
+.comments-section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Reply Input styling */
+.reply-section {
+  display: flex;
+  margin-top: 10px;
+}
+
+.reply-section input {
+  padding: 8px;
+  width: 80%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.reply-section button {
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reply-section button:hover {
+  background-color: #0056b3;
 }
